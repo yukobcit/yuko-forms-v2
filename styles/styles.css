@@ -61,7 +61,7 @@ main .color-blob {
 }
 .form #account-info input:focus, .form textarea:focus {
   background: white;
-  outline: 2px solid rgb(15, 170, 36);
+  outline: 2px solid rgb(255, 225, 0);
 }
 
 .form textarea{
