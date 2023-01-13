@@ -54,10 +54,10 @@ main .color-blob {
 .form #account-info input, textarea, select, #other-text {
   background: gainsboro;
   border: none;
-  height: 1.5rem;
+  height: 2rem;
   width: 100%;
-  margin-bottom: 15px;
-  border-radius:5px 5px 5px 5px;
+  margin-bottom: 3px;
+  border-radius:2px 2px 2px 2px;
 }
 .form #account-info input:focus, .form textarea:focus {
   background: white;
