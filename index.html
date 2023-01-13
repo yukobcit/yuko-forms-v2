@@ -37,17 +37,34 @@
               <input type="password" name="password" id="password" required>
             </fieldset>
 
-            <fieldset>
+            <fieldset id ="dev-skills">
               <legend><span id="number"> 2 </span>Dev Skills</legend>
               <h4>Programming Languages</h4>
-              <input type="checkbox" name="html" id="html" value="html">
-              <label for="html">HTML</label>
-              <input type="checkbox" name="css" id="css" value="css">
-              <label for="css">CSS</label>
-              <input type="checkbox" name="js" id="js" value="js">
-              <label for="js">JavaScript</label>
-              <input type="checkbox" name="php" id="php" value="php">
-              <label for="php">PHP</label>
+
+            <table>
+              <tr>
+                <td><label for="html"><input type="checkbox" name="html" id="html" value="html">HTML</label></td>
+                <td><label for="css"><input type="checkbox" name="css" id="css" value="css">CSS</label></td>
+                <td><label for="sa"><input type="checkbox" name="sa" id="sa" value="sa">Sass</label></td>
+              </tr>
+              <tr>              
+                <td><label for="js"><input type="checkbox" name="js" id="js" value="js">JavaScript</label></td>
+                <td><label for="php"><input type="checkbox" name="php" id="php" value="php">PHP</label></td>
+                <td><label for="py"><input type="checkbox" name="py" id="py" value="py">Python</label></td></tr>
+            </table>
+
+              <h4>Dev Ops</h4>
+              <table>
+                <tr>
+              <td>       
+                <label for="git"><input type="checkbox" name="git" id="git" value="git">GIT</label></td>
+              <td>
+                <label for="gulp"><input type="checkbox" name="gulp" id="gulp" value="gulp">Gulp</label>
+              </td>
+              <td>
+                <label for="web"><input type="checkbox" name="web" id="web" value="web">Webpack</label>
+              </td>
+              </table>
             </fieldset>
 
             
@@ -108,7 +125,6 @@
     </main>
     <footer><p>&copy; 2022 Yuko Ishida</p></footer>
     <script src="./scripts/script.js"></script>
-
 
 
 
