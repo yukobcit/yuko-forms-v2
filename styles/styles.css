@@ -11,8 +11,8 @@ html {
 body {
   min-height: 125vh;
   min-width: 400px;
-  background: linear-gradient(to bottom, rgb(0, 166, 216) 0%,rgb(177, 228, 243) 100%);
-  font-family: 'Josefin Slab', serif;
+  background: linear-gradient(to bottom,rgb(255, 225, 0)0%,darkorange 100%);
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: 800;
 }
@@ -102,7 +102,7 @@ legend {
   height: 40px;
   border-radius:5px 5px 5px 5px;
   margin-bottom: 30px;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   border: none;
 }
