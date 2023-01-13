@@ -16,17 +16,20 @@
       <div class="color-blob"></div>
       <section class="form-container">
         <div class="form">
-          <h2>Signup</h2>
+          <h2 class="underline">Signup</h2>
           <form method="post">
             <fieldset id="account-info">
               <legend>Account Info</legend>
               <br>
+              <label for="name" hidden>Name</label>
               <input type="text" name="name" id="name" required pattern="[a-zA-Z0-9]+"
                 title="Username can only contain alpha-numeric characters"
                 aria-label="Username containing only alpha-numeric characters" placeholder="Full name...">
               <br>
+              <label for="email" hidden>Email</label>
               <input type="email" name="email" id="email" required placeholder="Email Address...">
               <br>
+              <label for="password" hidden>Password</label>
               <input type="password" name="password" id="password" required placeholder="Password... min 8 chars">
             </fieldset>
 
