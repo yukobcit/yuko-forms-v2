@@ -51,6 +51,26 @@ main .color-blob {
   width: 380px;
 }
 
+.form h2 {
+  position: relative;
+  color: darkblue;
+  font-size: 2em;
+  font-weight: 600;
+  text-shadow: 1px 2px 4px #888;
+  margin-bottom: 1em;
+}
+
+.form h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 3em;
+  height: 0.1em;
+  background: darkblue;
+  box-shadow: 1px 2px 4px #CCC;
+}
+
 .form #account-info input, textarea, select, #other-text {
   background: gainsboro;
   border: none;
@@ -85,8 +105,8 @@ table
 legend {
   margin-left: 1rem;
   padding: 1rem;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: bolder;
   border: none;
 }
 legend::before {
@@ -116,19 +136,6 @@ fieldset:nth-of-type(4) legend::before {
   content: "4";
 }
 
-h2 ::before{
-  
-}
-
-[class="underline"]{
-
-  border-bottom:3px solid darkblue ;
-  margin-top: 3px;
-  width: 80px;
-  text-shadow: 1px 2px 3px darkblue ;
-
-
-}
 
 [class = "button"]{
   width: 100%;
