@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <title>Sign Up Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -20,23 +20,25 @@
           <form method="post">
             <fieldset id="account-info">
               <legend>Account Info</legend>
-              <br>
               <label for="name" hidden>Name</label>
-              <input type="text" name="name" id="name" required pattern="[a-zA-Z0-9]+"
-                title="Username can only contain alpha-numeric characters"
-                aria-label="Username containing only alpha-numeric characters" placeholder="Full name...">
-              <br>
+              <input type="text" name="name" id="name" required pattern="[a-zA-Z]+"
+                title="Full name can only contain alphabetical letters characters"
+                aria-label="Full name containing only alphabetical letters" placeholder="Full name...">
+
               <label for="email" hidden>Email</label>
               <input type="email" name="email" id="email" required placeholder="Email Address...">
-              <br>
+
               <label for="password" hidden>Password</label>
-              <input type="password" name="password" id="password" required placeholder="Password... min 8 chars">
+              <input type="password" name="password" id="password" required pattern=".{8,}" 
+              title="Password should be more than 8 characters"
+              aria-label="Password should be more than 8 characters"
+              placeholder="Password... min 8 chars">
+
             </fieldset>
 
             <fieldset>
               <legend>Dev Skills</legend>
               <h4>Programming Languages</h4>
-
             <table>
               <tr>
                 <td><label for="html"><input type="checkbox" name="html" id="html" value="html">HTML</label></td>
@@ -66,8 +68,6 @@
             
             <fieldset>
               <legend>Experience</legend>
-              <label class="standalone">Overall Experience</label>
-              <br>
               <input type="radio" name="experience" id="beginner" value="beginner">
               <label for="beginner">Beginner</label>
               <input type="radio" name="experience" id="intermediate" value="intermediate">
@@ -79,7 +79,7 @@
             <fieldset>
               <legend>Other</legend>
               <label for="referredby">How did you hear about us?</label>
-              <br>
+
               <select name="referredby" id="referredby">
                 <option value="">Please Select...</option>
                 <optgroup label="Person">
@@ -101,53 +101,24 @@
             </fieldset>
 
             <span id="hidden" hidden>
-            <label for="text">Details, Please...</label>
-            <br>
-            <input type="text" name="other-text" id="other-text" >
+              <label for="other-text">Details, Please...</label>
+              <br>
+              <input type="text" name="other-text" id="other-text" placeholder="Do tell!">
             </span>
-
             <label for="comments">Comments</label>
             <br>
-            <textarea name="comments" id="comments" cols="40" rows="6"></textarea>
-
-            <input type="hidden" name="userid" value="test">
+            <textarea name="comments" id="comments"></textarea>
+            <input type="hidden" name="userid" value="test-userid">
             <br>
-            <input type="submit" value="Submit" class="button" >
+            <input type="submit" id="submit" value="Submit" class="button" aria-label="Submit">
             <br>
-            <input type="reset" value="Reset" class="button">
+            <input type="reset" id="reset" value="Clear Form" class="button" aria-label="Clear Form"
+            onclick="OnResetClick();">
           </form>
         </div>
       </section>
     </main>
     <footer><p>&copy; 2022 Yuko Ishida</p></footer>
     <script src="./scripts/script.js"></script>
-
-
-
-    <!--  
-
-*** Form should have a max-width of
-480px and should be centred along
-the left / right axis within the
-browser
-
-Form should post data to #
-
-Select Menu Values
-
-Person
-  Friend
-  Family
-  Colleague
-
-Media
-  Internet
-  Radio
-  TV
-  Newspaper
-Other
-  Magic!
-  Other...
--->
   </body>
 </html>

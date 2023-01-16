@@ -5,9 +5,13 @@ otherText.onchange = event => {
     if(other =="magic"){
         document.getElementById('hidden').style.display = "block";
     }else if (other =="other"){
-        // blockで表示
         document.getElementById('hidden').style.display = "block";
     }else{
         document.getElementById('hidden').style.display = "none";
     }
+}
+
+function OnResetClick()
+{
+    document.getElementById('hidden').style.display = "none";
 }
